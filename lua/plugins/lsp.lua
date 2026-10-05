@@ -1,20 +1,23 @@
-vim.lsp.config( "lua_ls", {
-    cmd = { "/bin/lua-language-servera" },
-    filetypes = { "lua" },
-    root_markers = { "git" },
-})
+return {
 
-vim.lsp.config( "rust-analyzer", {
-    cmd = { "/bin/rust-analyzer" },
-    filetypes = { "rust" },
-    root_markers = { "Cargo.toml", ".git" },
-})
+    vim.lsp.config( "lua_ls", {
+        cmd = { "/bin/lua-language-server" },
+        filetypes = { "lua" },
+        root_markers = { ".git" },
+    }),
 
-vim.lsp.config( "bashls", {
-    cmd = { "/bin/bash-language-server" },
-    filetypes = { "bash", "sh" },
-    root_markers = { ".git" },
-})
+    vim.lsp.config( "rust-analyzer", {
+        cmd = { "/bin/rust-analyzer" },
+        filetypes = { "rust" },
+        root_markers = { "Cargo.toml", ".git" },
+    }),
 
-vim.lsp.enable( "rust-analyzer", "bashls" )
+    vim.lsp.config( "bashls", {
+        cmd = { "/bin/bash-language-server", "start" },
+        filetypes = { "bash", "sh" }
+    }),
+
+    vim.lsp.enable( "lua_ls", "rust-analyzer", "bashls" )
+
+}
 
