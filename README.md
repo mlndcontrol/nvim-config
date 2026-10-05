@@ -20,7 +20,7 @@
 
 ```shell
 
-git clone https://github.com/BBIAntares/nvim-config ~/.config/nvim
+git clone https://github.com/mlndcontrol/nvim-config ~/.config/nvim
 
 ```
 
