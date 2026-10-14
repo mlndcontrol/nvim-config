@@ -2,23 +2,23 @@
 
 base packages: 
 
-Git
+* git
 
-neovim
+* neovim
 
-tree-sitter-cli
+* tree-sitter-cli
 
-gcc (for treesitter-cli)
+* gcc (for treesitter-cli)
 
 lsp packages:
 
-rust-analyzer & rust-src
+* rust-analyzer & rust-src
 
-lua-language-server
+* lua-language-server
 
-bash-language-sever
+* bash-language-sever
 
-clangd 
+* clangd 
 
 #### Getting Started
 
