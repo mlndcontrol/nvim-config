@@ -1,22 +1,28 @@
 #### Requirements
 
-* Git
+base packages: 
 
-* neovim >= 0.11.3
+Git
 
-* rust-analyzer & rust-src
+neovim
 
-* lua-language-server
+tree-sitter-cli
 
-* bash-language-sever
+gcc (for treesitter-cli)
 
-* tree-sitter-cli
+lsp packages:
 
-* gcc (for treesitter-cli)
+rust-analyzer & rust-src
+
+lua-language-server
+
+bash-language-sever
+
+clangd 
 
 #### Getting Started
 
-* Clone the repo:
+Clone the repo:
 
 ```shell
 
@@ -24,7 +30,7 @@ git clone https://github.com/mlndcontrol/nvim-config ~/.config/nvim
 
 ```
 
-* Remove the .git folder:
+Remove the .git folder:
 
 ```shell
 
@@ -32,7 +38,7 @@ rm -rf ~/.config/nvim/.git
 
 ```
 
-* Start nvim:
+Start nvim:
 
 ```shell
 
