@@ -10,6 +10,8 @@ base packages:
 
 * gcc (for treesitter-cli)
 
+* xclip
+
 lsp packages:
 
 * rust-analyzer & rust-src
